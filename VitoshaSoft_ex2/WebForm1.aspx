@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Credit_List.aspx.cs" Inherits="VitoshaSoft_ex2.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="VitoshaSoft_ex2.WebForm1" %>
 
 <!DOCTYPE html>
 
