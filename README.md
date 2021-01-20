@@ -6,7 +6,7 @@ Develop a web program which uses a class Credit to describe a credit and display
 * Download the latest .NET framework - https://dotnet.microsoft.com/download/dotnet-framework
 
 ## Setup
-* Open the the project (Test_Ex_2_Credit/VitoshaSoft_ex2/Test_ex2.csproj) with Visual studio
+* Open the project (Test_Ex_2_Credit/VitoshaSoft_ex2/Test_ex2.csproj) with Visual studio
 * Go to 'Solution Explorer -> WebForm.aspx' and build the solution
 * Run
 
