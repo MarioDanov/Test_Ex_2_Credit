@@ -1,22 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace VitoshaSoft_ex2
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    // Web form interface for credit data presentation.
+    public partial class WebForm1 : Page
     {
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+        // Loading a credit data by credit ID selected by user via DropDownList.
         protected void Credit_Load(object sender, EventArgs e)
         {
-            List<Credit> credits = Create_credits();
+            List<Credit> credits = Credit.Create_credits();
             foreach(Credit c in credits){
                 if(CreditList.SelectedValue == c.ID)
                 {
@@ -30,24 +29,6 @@ namespace VitoshaSoft_ex2
                     this.TextBox2.Visible = true;
                 }
             }
-        }
-        public virtual List<Credit> Create_credits()
-        {
-            DateTime dt = new DateTime(2021, 12, 10);
-            DateTime dt2 = new DateTime(2021, 01, 10);
-            DateTime dt3 = new DateTime(2020, 12, 10);
-
-            Credit credit1 = new Credit("Georg", "Petkan", "aN87", 1000.21f, dt.Date);
-            Credit credit2 = new Credit("Dragan", "Oktan", "Bj96", 314.74f, dt2.Date);
-            Credit credit3 = new Credit("Philips", "Pakistan", "Kh54", 5060f, dt3.Date);
-
-            List<Credit> credits = new List<Credit>();
-
-            credits.Add(credit1);
-            credits.Add(credit2);
-            credits.Add(credit3);
-
-            return credits;
         }
     }
 }
